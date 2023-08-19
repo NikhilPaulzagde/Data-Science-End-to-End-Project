@@ -1,0 +1,3 @@
+[ 2023-08-19 13:35:03,100 ] 24 root - INFO - Data Reading
+[ 2023-08-19 13:35:03,256 ] 29 root - INFO - Data Splitted to Train and test
+[ 2023-08-19 13:35:03,366 ] 37 root - INFO - Data Ingestion Completed

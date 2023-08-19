@@ -1,0 +1,5 @@
+[ 2023-08-18 21:25:40,706 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-08-18 21:25:40,710 ] 187 werkzeug - INFO -  * Debugger PIN: 459-503-463
+[ 2023-08-18 21:26:04,763 ] 8 root - INFO - I m testing second way of logging
+[ 2023-08-18 21:26:04,764 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Aug/2023 21:26:04] "GET / HTTP/1.1" 200 -
+[ 2023-08-18 21:26:04,826 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Aug/2023 21:26:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
