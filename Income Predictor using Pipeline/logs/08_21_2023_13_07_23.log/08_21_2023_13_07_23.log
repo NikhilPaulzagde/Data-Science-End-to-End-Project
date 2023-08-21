@@ -1,0 +1,35 @@
+[ 2023-08-21 13:07:25,064 ] 25 root - INFO - Data Reading
+[ 2023-08-21 13:07:25,219 ] 30 root - INFO - Data Splitted to Train and test
+[ 2023-08-21 13:07:25,329 ] 38 root - INFO - Data Ingestion Completed
+[ 2023-08-21 13:07:25,391 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,407 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,407 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,407 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,407 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,407 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,422 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,422 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,422 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,422 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,422 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,438 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,438 ] 88 root - INFO - Outlier capped on our train data
+[ 2023-08-21 13:07:25,438 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,438 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,438 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,438 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,438 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,454 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,454 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,454 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,454 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,454 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,454 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,469 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:07:25,469 ] 93 root - INFO - Outlier capped on our test data
+[ 2023-08-21 13:07:25,469 ] 28 root - INFO - Data Transformation Started
+[ 2023-08-21 13:07:25,469 ] 101 root - INFO - Splitting train data into dependent and independent feature
+[ 2023-08-21 13:07:25,469 ] 105 root - INFO - Splitting test data into dependent and independent feature
+[ 2023-08-21 13:07:25,533 ] 32 root - INFO - Spitting Data into Dependent and Independent feature
+[ 2023-08-21 13:07:25,533 ] 40 root - INFO - Models training has initiated
+[ 2023-08-21 13:07:25,533 ] 83 root - INFO - Model evaluation has initiated

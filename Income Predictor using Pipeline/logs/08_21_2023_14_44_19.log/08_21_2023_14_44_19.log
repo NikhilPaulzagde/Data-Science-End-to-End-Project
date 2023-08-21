@@ -1,0 +1,12 @@
+[ 2023-08-21 14:44:21,961 ] 25 root - INFO - Data Reading
+[ 2023-08-21 14:44:22,024 ] 30 root - INFO - Data Splitted to Train and test
+[ 2023-08-21 14:44:22,086 ] 38 root - INFO - Data Ingestion Completed
+[ 2023-08-21 14:44:22,164 ] 86 root - INFO - Outlier capped on our train data
+[ 2023-08-21 14:44:22,196 ] 91 root - INFO - Outlier capped on our test data
+[ 2023-08-21 14:44:22,196 ] 28 root - INFO - Data Transformation Started
+[ 2023-08-21 14:44:22,196 ] 99 root - INFO - Splitting train data into dependent and independent feature
+[ 2023-08-21 14:44:22,196 ] 103 root - INFO - Splitting test data into dependent and independent feature
+[ 2023-08-21 14:44:22,231 ] 32 root - INFO - Spitting Data into Dependent and Independent feature
+[ 2023-08-21 14:44:22,231 ] 40 root - INFO - Models training has initiated
+[ 2023-08-21 14:44:22,231 ] 92 root - INFO - Model evaluation has initiated
+[ 2023-08-21 14:44:27,366 ] 107 root - INFO - Best model found, Model Name is Decision Tree,accuracy score : 0.5928525845564774

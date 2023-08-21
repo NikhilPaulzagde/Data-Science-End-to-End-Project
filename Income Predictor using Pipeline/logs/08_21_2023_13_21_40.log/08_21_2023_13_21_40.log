@@ -1,0 +1,36 @@
+[ 2023-08-21 13:21:42,557 ] 25 root - INFO - Data Reading
+[ 2023-08-21 13:21:42,873 ] 30 root - INFO - Data Splitted to Train and test
+[ 2023-08-21 13:21:42,993 ] 38 root - INFO - Data Ingestion Completed
+[ 2023-08-21 13:21:43,063 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,063 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,063 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,063 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,078 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,078 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,078 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,078 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,078 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,094 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,094 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,094 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,094 ] 88 root - INFO - Outlier capped on our train data
+[ 2023-08-21 13:21:43,094 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,094 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,109 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,109 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,109 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,109 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,109 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,125 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,125 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,125 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,125 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,125 ] 66 root - INFO - Outlier  handled
+[ 2023-08-21 13:21:43,125 ] 93 root - INFO - Outlier capped on our test data
+[ 2023-08-21 13:21:43,125 ] 28 root - INFO - Data Transformation Started
+[ 2023-08-21 13:21:43,125 ] 101 root - INFO - Splitting train data into dependent and independent feature
+[ 2023-08-21 13:21:43,125 ] 105 root - INFO - Splitting test data into dependent and independent feature
+[ 2023-08-21 13:21:43,189 ] 32 root - INFO - Spitting Data into Dependent and Independent feature
+[ 2023-08-21 13:21:43,189 ] 40 root - INFO - Models training has initiated
+[ 2023-08-21 13:21:43,189 ] 92 root - INFO - Model evaluation has initiated
+[ 2023-08-21 13:23:11,888 ] 104 root - INFO - Best model found, Model Name is XGBClassifier,accuracy score : 0.7592706412620365
