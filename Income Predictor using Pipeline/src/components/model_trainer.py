@@ -9,10 +9,9 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from dataclasses import dataclass
 from src.utils import save_object 
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
-from xgboost import XGBClassifier
 
 from sklearn.model_selection import GridSearchCV
 from src.utils import evaluate_model
@@ -42,10 +41,7 @@ class ModelTrainer:
             model = {
                      "Decision Tree": DecisionTreeClassifier(),
                      "Random Forest": RandomForestClassifier(),
-                    # "Gradient Boosting": GradientBoostingClassifier(),
                      "Logistic Regression": LogisticRegression(),
-                     "XGBClassifier": XGBClassifier(),
-                    # "AdaBoost Classifier": AdaBoostClassifier(),
                 }
 
             params = {
@@ -69,21 +65,9 @@ class ModelTrainer:
                         "C": [0.01, 0.1, 1, 10],
                         "solver": ["liblinear", "saga"],
                     },
-                    "Gradient Boosting": {
-                        "learning_rate": [0.1, 0.01, 0.05, 0.001],
-                        "subsample": [0.6, 0.7, 0.75, 0.8, 0.85, 0.9],
-                        "max_depth": [3, 5, 7],
-                        "n_estimators": [8, 16, 32, 64, 128, 256],
-                    },
-                    "XGBClassifier": {
-                        "learning_rate": [0.1, 0.01, 0.05, 0.001],
-                        "n_estimators": [8, 16, 32, 64, 128, 256],
-                    },
+                  
                    
-                    "AdaBoost Classifier": {
-                        "learning_rate": [0.1, 0.01, 0.5, 0.001],
-                        "n_estimators": [8, 16, 32, 64, 128, 256],
-                    },
+                 
                 }
 
 
@@ -106,7 +90,8 @@ class ModelTrainer:
 
             logging.info(f"Best model found, Model Name is {best_model_name},accuracy score : {best_model_score}")
 
-            save_object(file_path=self.model_trainer_config.train_model_file_path,obj=best_model)
+            save_object(file_path=self.model_trainer_config.train_model_file_path,
+                        obj=best_model)
 
 
         except Exception as e:
