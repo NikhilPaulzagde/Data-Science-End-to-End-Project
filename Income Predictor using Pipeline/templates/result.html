@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Python Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #c8d2d3;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .table-users {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: #303e3f;
+      color: white;
+      font-size: 1.5em;
+      padding: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 10px 10px 0 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table td,
+    table th {
+      color: #2b686e;
+      padding: 10px;
+      border-bottom: 1px solid #327a81;
+    }
+
+    table th {
+      background-color: #daeff1;
+      font-weight: 300;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #edf7f8;
+    }
+
+    @media screen and (max-width: 700px) {
+      table td,
+      table th {
+        display: block;
+        text-align: left;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="table-users">
+    <div class="header">Income Result</div>
+    {{final_result}}
+  </div>
+</body>
+
+</html>
