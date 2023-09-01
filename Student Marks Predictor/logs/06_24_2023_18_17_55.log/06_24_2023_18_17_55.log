@@ -1,0 +1,5 @@
+[ 2023-06-24 18:17:55,482 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-24 18:17:55,482 ] 187 werkzeug - INFO -  * Debugger PIN: 109-012-075
+[ 2023-06-24 18:17:57,553 ] 187 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2023 18:17:57] "GET /predictdata HTTP/1.1" 200 -
+[ 2023-06-24 18:18:34,140 ] 187 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2023 18:18:34] "POST /predictdata HTTP/1.1" 200 -
+[ 2023-06-24 18:18:59,911 ] 187 werkzeug - INFO -  * Detected change in 'D:\\Project\\ML\\Project 1\\app.py', reloading

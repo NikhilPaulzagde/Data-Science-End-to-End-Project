@@ -1,0 +1,10 @@
+[ 2023-06-24 18:16:20,272 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-24 18:16:20,280 ] 187 werkzeug - INFO -  * Debugger PIN: 109-012-075
+[ 2023-06-24 18:16:24,431 ] 187 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2023 18:16:24] "GET /predictdata HTTP/1.1" 200 -
+[ 2023-06-24 18:16:24,603 ] 187 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2023 18:16:24] "GET /predictdata HTTP/1.1" 200 -
+[ 2023-06-24 18:16:53,763 ] 187 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2023 18:16:53] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2023-06-24 18:16:53,971 ] 187 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2023 18:16:53] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2023-06-24 18:16:53,977 ] 187 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2023 18:16:53] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2023-06-24 18:16:54,064 ] 187 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2023 18:16:54] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-24 18:16:54,087 ] 187 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2023 18:16:54] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-24 18:17:21,658 ] 187 werkzeug - INFO -  * Detected change in 'd:\\project\\ml\\project 1\\src\\pipeline\\predict_pipeline.py', reloading

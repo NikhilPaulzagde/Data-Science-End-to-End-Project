@@ -1,0 +1,3 @@
+[ 2023-06-24 18:19:10,807 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-24 18:19:10,812 ] 187 werkzeug - INFO -  * Debugger PIN: 109-012-075
+[ 2023-06-24 18:19:42,624 ] 187 werkzeug - INFO -  * Detected change in 'D:\\Project\\ML\\Project 1\\app.py', reloading
