@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        h1 {
+            font-size: 70px; /* Updated font size */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://c8.alamy.com/comp/HH538W/training-icon-design-HH538W.jpg" alt="Image" width="300">
+        <h1>Train</h1>
+        <form action="/train" method="POST">
+            <input type="submit" class="btn" value="Train">
+        </form>
+
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+
+        {% if error %}
+            <p>Error: {{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,186 @@
+<!-- batch.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Batch Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Center content */
+        html, body {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Add transparent box */
+        .content-box {
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            background-color: #e0e0e0;
+            text-align: center;
+            position: relative;
+        }
+        
+        /* Add animations */
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slide-up {
+            from { transform: translateY(50px); }
+            to { transform: translateY(0); }
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes spinner {
+            to { transform: rotate(360deg); }
+        }
+        
+        .fade-in {
+            animation: fade-in 1s ease-in-out;
+        }
+        
+        .slide-up {
+            animation: slide-up 0.5s ease-in-out;
+        }
+        
+        .rotate {
+            animation: rotate 2s linear infinite;
+        }
+        
+        .spinner {
+            animation: spinner 1s linear infinite;
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #4CAF50;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            margin: 0 auto;
+            margin-top: 20px;
+            display: none; /* Initially hidden */
+        }
+        
+        /* Styling for buttons */
+        .upload-button,
+        .prediction-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            animation-duration: 0.3s;
+            animation-fill-mode: both;
+            opacity: 0;
+        }
+        
+        .upload-button:hover,
+        .prediction-button:hover {
+            background-color: #45a049;
+        }
+        
+        /* Icon styles */
+        .upload-icon,
+        .prediction-icon {
+            margin-right: 10px;
+        }
+        
+        /* Positioning for corner images */
+        .corner-image {
+            position: fixed;
+            width: 50px;
+            opacity: 0;
+            z-index: 9999;
+            transition: opacity 0.3s ease;
+        }
+        
+        .corner-image:hover {
+            opacity: 0.8;
+        }
+        
+        .top-left {
+            top: 10px;
+            left: 10px;
+        }
+        
+        .top-right {
+            top: 10px;
+            right: 10px;
+        }
+        
+        .bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+        
+        .bottom-right {
+            bottom: 10px;
+            right: 10px;
+        }
+        
+        /* Animation keyframes for buttons */
+        @keyframes button-fade-in {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        @keyframes button-slide-up {
+            from { transform: translateY(50px); }
+            to { transform: translateY(0); }
+        }
+        
+        /* Apply animation to buttons */
+        .upload-button {
+            animation: button-fade-in 0.5s ease-in-out 0.3s forwards, button-slide-up 0.5s ease-in-out 0.3s forwards;
+        }
+        
+        .prediction-button {
+            animation: button-fade-in 0.5s ease-in-out 0.5s forwards, button-slide-up 0.5s ease-in-out 0.5s forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box fade-in">
+        <img src="https://static-00.iconduck.com/assets.00/csv-icon-1791x2048-ot22nr8i.png" width="200" height="250" alt="Batch Prediction Image">
+        <h1>Batch Prediction</h1>
+        {% if error %}
+            <p>{{ error }}</p>
+        {% endif %}
+        <form action="/batch" method="POST" enctype="multipart/form-data" class="slide-up">
+            <label for="csv_file" class="upload-button">
+                <i class="fas fa-file-csv upload-icon"></i> Upload CSV
+            </label>
+            <input type="file" id="csv_file" name="csv_file" accept=".csv" required>
+            <button type="submit" class="prediction-button">
+                <i class="fas fa-rocket prediction-icon"></i> Start Batch Prediction
+            </button>
+            <div class="spinner"></div>
+        </form>
+        {% if prediction_result %}
+            <p>{{ prediction_result }}</p>
+        {% endif %}
+        <img src="https://successanalytics.in/logo.ab81d45e.png" alt="Logo" class="corner-image top-left">
+        <img src="https://successanalytics.in/logo.ab81d45e.png" alt="Logo" class="corner-image top-right">
+        <img src="https://successanalytics.in/logo.ab81d45e.png" alt="Logo" class="corner-image bottom-left">
+        <img src="https://successanalytics.in/logo.ab81d45e.png" alt="Logo" class="corner-image bottom-right">
+    </div>
+    <script>
+        // Show spinner animation on form submit
+        document.querySelector('form').addEventListener('submit', function() {
+            document.querySelector('.spinner').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+
+
+<style>
+  .page {
+    content: "";
+    background-image: url("https://thumbs.dreamstime.com/b/viersen-germany-may-close-up-mobile-phone-screen-logo-lettering-indian-food-delivery-service-swiggy-zomato-wood-205468104.jpg?w=1200");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 112px;
+    left: 0;
+    width: 100%;
+    height: 150%;
+  }
+  .container{
+      margin: 5% auto;
+      width: 810px;
+      color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #000;
+      opacity: 0.7;
+  }
+  .section{
+      opacity: 1;
+      padding: 10px;
+      display: inline-block;
+      font-size: 1.1em;
+      margin-right: 20px;
+      min-width: 360px;
+  }
+  .title{
+      width:100%;
+      float: left;
+  }
+  .description{
+      width:50%;
+      float: left;
+  }
+  input, select{
+      padding: 10px;
+      width: 150px;
+  }
+</style>
+<div >
+
+  <form action="{{url_for('predict_datapoint')}}" method="POST">
+    
+  <h1 style="background-color: skyblue; text-align: center; padding: 30px ; font-size: 2em;">DELIVERY TIME PREDICTION</h1>
+  <div class="page">
+      <div class="container">
+
+
+        
+        <div class="section">
+          <div class="title">Delivery person Age</div>
+          <div class="description">
+              <input type="text" id="Delivery_person_Age" name="Delivery_person_Age" placeholder="Enter AGE">
+          </div>
+        </div>
+
+
+
+        
+
+      <div class="section">
+        <div class="title">Delivery person Ratings</div>
+        <div class="description">
+            <input type="text" id="Delivery_person_Ratings" name="Delivery_person_Ratings" placeholder="Enter  rating (float)">
+        </div>
+      </div>
+
+
+
+
+
+      <div class="section">
+        <div class="title">Weather conditions</div>
+        <div class="description">
+          <select id="Weather_conditions" name="Weather_conditions">
+            <option value="Sunny">Sunny</option>
+            <option value="Cloudy">Cloudy</option>
+            <option value="Fog">Fog</option>
+            <option value="Windy">Windy</option>
+            <option value="Sandstorms">Sandstorms</option>
+            <option value="Stormy">Stormy</option>
+          </select>
+        </div>
+      </div>
+
+
+
+
+      <div class="section">
+        <div class="title">Road traffic density</div>
+        <div class="description">
+          <select id="Road_traffic_density" name="Road_traffic_density">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="Jam">Jam</option>
+          </select>
+        </div>
+      </div>
+
+
+
+      <div class="section">
+        <div class="title">Vehicle condition</div>
+        <div class="description">
+          <select id="Vehicle_condition" name="Vehicle_condition">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+      </div>
+
+
+
+      <div class="section">
+        <div class="title">Multiple Deliveries</div>
+        <div class="description">
+          <select id="multiple_deliveries" name="multiple_deliveries">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+      </div>
+
+
+    
+
+      <div class="section">
+        <div class="title">Distance</div>
+        <div class="description">
+            <input type="text" id="distance" name="distance" placeholder="Enter  distance (float)">
+        </div>
+      </div>
+
+
+
+
+      <div class="section">
+        <div class="title">Type of order</div>
+        <div class="description">
+          <select id="Type_of_order" name="Type_of_order">
+            <option value="Drinks">Drinks</option>
+            <option value="Buffet">Buffet</option>
+            <option value="Snack">Snack</option>
+            <option value="Meal">Meal</option>
+          </select>
+        </div>
+      </div>
+
+
+
+    
+      <div class="section">
+        <div class="title">Type of vehicle</div>
+        <div class="description">
+          <select id="Type_of_vehicle" name="Type_of_vehicle">
+            <option value="scooter">scooter</option>
+            <option value="motorcycle">motorcycle</option>
+            <option value="electric_scooter">electric_scooter</option>
+            <option value="bicycle">bicycle</option>
+          </select>
+        </div>
+      </div>
+      
+
+      <div class="section">
+        <div class="title">Festival</div>
+        <div class="description">
+          <select id="Festival" name="Festival">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          
+          </select>
+        </div>
+      </div>
+      
+
+      <div class="section">
+        <div class="title">City</div>
+        <div class="description">
+          <select id="City" name="City">
+            <option value="Metropolitian">Metropolitian</option>
+            <option value="Urban">Urban</option>
+            <option value="Semi-Urban">Semi-Urban</option>
+          </select>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+
+
+
+          <div style="width:100%; float: left; text-align: center;">
+ 
+              <input type="submit" value="Submit" style="width: 200px; height: 50px; background-color: rgb(247, 8, 8); color: white; font-size: 23px;">
+         
+            </div>
+            
+            <h1><h1>Delivery come in {{final_result}} minutes</h1></h1>
+              
+              
+          </form>
+      </div>
+  </div>
+
+</div>

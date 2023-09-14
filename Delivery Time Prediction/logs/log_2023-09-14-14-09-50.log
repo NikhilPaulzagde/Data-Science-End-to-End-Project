@@ -1,0 +1,203 @@
+[2023-09-14 14:09:52,513] werkzeug - WARNING -  * Debugger is active!
+[2023-09-14 14:09:52,529] werkzeug - INFO -  * Debugger PIN: 135-151-379
+[2023-09-14 14:10:06,772] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:10:06] "GET / HTTP/1.1" 200 -
+[2023-09-14 14:10:07,310] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:10:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-09-14 14:10:11,692] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:10:11] "GET /predict HTTP/1.1" 200 -
+[2023-09-14 14:10:24,105] root - INFO - DataFrame gatherd
+[2023-09-14 14:10:24,105] root - INFO - Exception occured while loading a model
+[2023-09-14 14:10:24,105] root - INFO - Error occured in prediction pipeline
+[2023-09-14 14:10:24,121] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:10:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2023-09-14 14:10:24,297] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:10:24] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2023-09-14 14:10:24,321] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:10:24] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2023-09-14 14:10:24,401] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:10:24] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2023-09-14 14:10:24,433] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:10:24] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2023-09-14 14:10:34,874] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:10:34] "GET /train HTTP/1.1" 200 -
+[2023-09-14 14:10:37,321] root - INFO - ==================================================
+[2023-09-14 14:10:37,321] root - INFO - Initiate Data Ingestion config
+[2023-09-14 14:10:37,321] root - INFO - ==================================================
+[2023-09-14 14:10:37,545] root - INFO - Download data D:\Project\ML\Delivery Time Prediction\Data\finalTrain.csv
+[2023-09-14 14:10:37,545] root - INFO - Dataset read as pandas Dataframe
+[2023-09-14 14:10:38,145] root - INFO - train test split
+[2023-09-14 14:10:38,722] root - INFO - train data path, D:\Project\ML\Delivery Time Prediction\Artifact\data_ingestion\2023-09-14 14-09-50\ingested_dir\train.csv
+[2023-09-14 14:10:38,858] root - INFO - test data path, D:\Project\ML\Delivery Time Prediction\Artifact\data_ingestion\2023-09-14 14-09-50\ingested_dir\test.csv
+[2023-09-14 14:10:38,858] root - INFO - data ingestion complete
+[2023-09-14 14:10:39,130] root - INFO - Obtaining preprocessing object
+[2023-09-14 14:10:39,130] root - INFO - Obtaining feature engineering object.
+[2023-09-14 14:10:39,130] root - INFO - 
+******************** Feature Engneering Started ********************
+
+
+[2023-09-14 14:10:39,130] root - INFO - Applying feature engineering object on training dataframe and testing dataframe
+[2023-09-14 14:10:39,130] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Training data <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-09-14 14:10:39,130] root - INFO - Feature Enineering - Train Data 
+[2023-09-14 14:10:39,138] root - INFO - dropping the Id column
+[2023-09-14 14:10:39,138] root - INFO - Creating feature on latitude nad longitude
+[2023-09-14 14:10:39,162] root - INFO - Train Dataframe Head: 
+   Delivery_person_Age  Delivery_person_Ratings Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order Type_of_vehicle  multiple_deliveries Festival           City  Time_taken (min)   distance
+0                 24.0                      5.0              Sunny               Medium                  1         Snack      motorcycle                  1.0       No  Metropolitian                16   4.657160
+1                 35.0                      4.3         Sandstorms                  Low                  0          Meal      motorcycle                  1.0       No  Metropolitian                27   9.348433
+2                 38.0                      4.1         Sandstorms               Medium                  0        Buffet      motorcycle                  0.0       No  Metropolitian                36  10.642185
+3                 27.0                      4.9              Windy               Medium                  1         Snack         scooter                  1.0       No  Metropolitian                22  20.287562
+4                 20.0                      4.7             Cloudy                  Jam                  0        Buffet      motorcycle                  0.0      Yes            NaN                42  14.022096
+[2023-09-14 14:10:39,162] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Test data <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-09-14 14:10:39,162] root - INFO - Feature Enineering - Test Data 
+[2023-09-14 14:10:39,162] root - INFO - dropping the Id column
+[2023-09-14 14:10:39,162] root - INFO - Creating feature on latitude nad longitude
+[2023-09-14 14:10:39,170] root - INFO - Train Dataframe Head: 
+   Delivery_person_Age  Delivery_person_Ratings Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order Type_of_vehicle  multiple_deliveries Festival           City  Time_taken (min)   distance
+0                 32.0                      4.1         Sandstorms               Medium                  0         Snack      motorcycle                  1.0       No  Metropolitian                33   7.490187
+1                 32.0                      4.9              Windy                  Low                  1         Snack      motorcycle                  1.0       No  Metropolitian                28   1.554499
+2                 23.0                      4.5              Sunny                  Jam                  2         Snack         scooter                  1.0       No  Metropolitian                22  11.007735
+3                 22.0                      4.5             Stormy                  Low                  0         Snack      motorcycle                  1.0       No  Metropolitian                25   4.468412
+4                 29.0                      4.9             Cloudy                  Jam                  0        Drinks      motorcycle                  1.0       No  Metropolitian                35  20.206901
+[2023-09-14 14:10:39,738] root - INFO - Saving csv to train_data and test_data.csv
+[2023-09-14 14:10:39,738] root - INFO - Data Transformation initiated
+[2023-09-14 14:10:39,746] root - INFO - shape of (36467, 11) and (9117, 11)
+[2023-09-14 14:10:39,746] root - INFO - shape of (36467,) and (9117,)
+[2023-09-14 14:10:39,914] root - INFO - Applying preprocessing object on training and testing datasets.
+[2023-09-14 14:10:39,914] root - INFO - shape of (36467, 20) and (9117, 20)
+[2023-09-14 14:10:39,914] root - INFO - shape of (36467,) and (9117,)
+[2023-09-14 14:10:39,914] root - INFO - transformation completed
+[2023-09-14 14:10:39,922] root - INFO - train_arr, test_arr completed
+[2023-09-14 14:10:39,922] root - INFO - train arr , test arr
+[2023-09-14 14:10:39,922] root - INFO - converting train_arr and test_arr to dataframe
+[2023-09-14 14:10:41,699] root - INFO - transformed_train_path
+[2023-09-14 14:10:41,699] root - INFO - transformed dataset columns : RangeIndex(start=0, stop=21, step=1)
+[2023-09-14 14:10:42,123] root - INFO - Preprocessor file saved
+[2023-09-14 14:10:42,123] root - INFO - Feature eng file saved
+[2023-09-14 14:10:42,131] root - INFO - Splitting Dependent and Independent variables from train and test data
+[2023-09-14 14:11:36,454] root - INFO - Model Report : {'LinearRegression': 0.466976771343238, 'DecisionTree': 0.6654275958818904, 'Gradient Boosting': 0.751360669538892, 'Random Forest': 0.8096646868882342, 'XGB Regressor': 0.8160880264792243}
+[2023-09-14 14:11:36,462] root - INFO - Best Model Found , Model Name : XGB Regressor , R2 Score : 0.8160880264792243
+[2023-09-14 14:11:36,542] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:11:36] "POST /train HTTP/1.1" 200 -
+[2023-09-14 14:21:20,031] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:21:20] "GET /train HTTP/1.1" 200 -
+[2023-09-14 14:21:24,455] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:21:24] "GET /predict HTTP/1.1" 200 -
+[2023-09-14 14:21:37,763] root - INFO - DataFrame gatherd
+[2023-09-14 14:21:37,811] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:21:37] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:23:39,796] root - INFO - DataFrame gatherd
+[2023-09-14 14:23:39,852] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:23:39] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:24:50,052] root - INFO - DataFrame gatherd
+[2023-09-14 14:24:50,116] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:24:50] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:25:24,509] root - INFO - DataFrame gatherd
+[2023-09-14 14:25:24,541] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:25:24] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:26:01,707] root - INFO - DataFrame gatherd
+[2023-09-14 14:26:01,771] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:26:01] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:27:28,744] root - INFO - DataFrame gatherd
+[2023-09-14 14:27:28,800] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:27:28] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:29:14,012] root - INFO - DataFrame gatherd
+[2023-09-14 14:29:14,068] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:29:14] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:30:51,787] root - INFO - DataFrame gatherd
+[2023-09-14 14:30:51,827] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:30:51] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:31:15,375] root - INFO - DataFrame gatherd
+[2023-09-14 14:31:15,439] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:31:15] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:32:02,528] root - INFO - DataFrame gatherd
+[2023-09-14 14:32:02,592] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:32:02] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:32:17,522] root - INFO - DataFrame gatherd
+[2023-09-14 14:32:17,562] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:32:17] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:32:46,466] root - INFO - DataFrame gatherd
+[2023-09-14 14:32:46,522] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:32:46] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:33:04,694] root - INFO - DataFrame gatherd
+[2023-09-14 14:33:04,750] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:33:04] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:33:20,648] root - INFO - DataFrame gatherd
+[2023-09-14 14:33:20,704] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:33:20] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:33:31,675] root - INFO - DataFrame gatherd
+[2023-09-14 14:33:31,731] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:33:31] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:33:52,910] root - INFO - DataFrame gatherd
+[2023-09-14 14:33:52,958] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:33:52] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:34:29,279] root - INFO - DataFrame gatherd
+[2023-09-14 14:34:29,343] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:34:29] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:34:39,047] root - INFO - DataFrame gatherd
+[2023-09-14 14:34:39,087] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:34:39] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:35:09,224] root - INFO - DataFrame gatherd
+[2023-09-14 14:35:09,280] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:35:09] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:35:16,506] root - INFO - DataFrame gatherd
+[2023-09-14 14:35:16,554] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:35:16] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:35:26,291] root - INFO - DataFrame gatherd
+[2023-09-14 14:35:26,331] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:35:26] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:35:38,619] root - INFO - DataFrame gatherd
+[2023-09-14 14:35:38,675] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:35:38] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:35:50,463] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:35:50] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2023-09-14 14:35:50,487] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:35:50] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2023-09-14 14:35:50,503] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:35:50] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2023-09-14 14:35:50,559] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:35:50] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2023-09-14 14:35:50,587] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:35:50] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2023-09-14 14:37:17,678] root - INFO - DataFrame gatherd
+[2023-09-14 14:37:17,734] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:37:17] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:37:29,436] root - INFO - DataFrame gatherd
+[2023-09-14 14:37:29,468] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:37:29] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:40:40,830] root - INFO - DataFrame gatherd
+[2023-09-14 14:40:40,886] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:40:40] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:42:04,510] root - INFO - DataFrame gatherd
+[2023-09-14 14:42:04,574] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:42:04] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:42:35,014] root - INFO - DataFrame gatherd
+[2023-09-14 14:42:35,070] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:42:35] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:42:48,174] root - INFO - DataFrame gatherd
+[2023-09-14 14:42:48,222] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:42:48] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:43:24,873] root - INFO - DataFrame gatherd
+[2023-09-14 14:43:24,937] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:43:24] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:43:37,038] root - INFO - DataFrame gatherd
+[2023-09-14 14:43:37,102] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:43:37] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:44:00,039] root - INFO - DataFrame gatherd
+[2023-09-14 14:44:00,095] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:44:00] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:44:48,118] root - INFO - DataFrame gatherd
+[2023-09-14 14:44:48,174] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:44:48] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:45:06,641] root - INFO - DataFrame gatherd
+[2023-09-14 14:45:06,681] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:45:06] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:45:17,014] root - INFO - DataFrame gatherd
+[2023-09-14 14:45:17,046] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:45:17] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:45:40,224] root - INFO - DataFrame gatherd
+[2023-09-14 14:45:40,288] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:45:40] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:46:00,123] root - INFO - DataFrame gatherd
+[2023-09-14 14:46:00,179] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:46:00] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:46:10,219] root - INFO - DataFrame gatherd
+[2023-09-14 14:46:10,275] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:46:10] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:46:35,498] root - INFO - DataFrame gatherd
+[2023-09-14 14:46:35,546] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:46:35] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:47:08,705] root - INFO - DataFrame gatherd
+[2023-09-14 14:47:08,761] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:47:08] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:47:56,162] root - INFO - DataFrame gatherd
+[2023-09-14 14:47:56,210] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:47:56] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:48:42,164] root - INFO - DataFrame gatherd
+[2023-09-14 14:48:42,228] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:48:42] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:48:54,924] root - INFO - DataFrame gatherd
+[2023-09-14 14:48:54,956] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:48:54] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:49:31,481] root - INFO - DataFrame gatherd
+[2023-09-14 14:49:31,537] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:49:31] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:49:45,903] root - INFO - DataFrame gatherd
+[2023-09-14 14:49:45,958] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:49:45] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:50:20,972] root - INFO - DataFrame gatherd
+[2023-09-14 14:50:21,036] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:50:21] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:50:40,820] root - INFO - DataFrame gatherd
+[2023-09-14 14:50:40,876] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:50:40] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:50:53,537] root - INFO - DataFrame gatherd
+[2023-09-14 14:50:53,569] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:50:53] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:53:49,918] root - INFO - DataFrame gatherd
+[2023-09-14 14:53:49,982] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:53:49] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:54:09,779] root - INFO - DataFrame gatherd
+[2023-09-14 14:54:09,835] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:54:09] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:54:35,406] root - INFO - DataFrame gatherd
+[2023-09-14 14:54:35,478] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:54:35] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:54:47,362] root - INFO - DataFrame gatherd
+[2023-09-14 14:54:47,426] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:54:47] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:55:08,722] root - INFO - DataFrame gatherd
+[2023-09-14 14:55:08,778] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:55:08] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:55:25,515] root - INFO - DataFrame gatherd
+[2023-09-14 14:55:25,571] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:55:25] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:55:33,841] root - INFO - DataFrame gatherd
+[2023-09-14 14:55:33,897] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:55:33] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:55:43,777] root - INFO - DataFrame gatherd
+[2023-09-14 14:55:43,817] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:55:43] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:56:06,893] root - INFO - DataFrame gatherd
+[2023-09-14 14:56:06,933] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:56:06] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:56:14,578] root - INFO - DataFrame gatherd
+[2023-09-14 14:56:14,610] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:56:14] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:56:33,124] root - INFO - DataFrame gatherd
+[2023-09-14 14:56:33,180] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:56:33] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:57:07,095] root - INFO - DataFrame gatherd
+[2023-09-14 14:57:07,151] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:57:07] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:57:24,326] root - INFO - DataFrame gatherd
+[2023-09-14 14:57:24,382] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:57:24] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:57:44,762] root - INFO - DataFrame gatherd
+[2023-09-14 14:57:44,826] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:57:44] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:57:57,766] root - INFO - DataFrame gatherd
+[2023-09-14 14:57:57,806] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:57:57] "POST /predict HTTP/1.1" 200 -
+[2023-09-14 14:58:39,486] werkzeug - INFO - 127.0.0.1 - - [14/Sep/2023 14:58:39] "GET /predict HTTP/1.1" 200 -
