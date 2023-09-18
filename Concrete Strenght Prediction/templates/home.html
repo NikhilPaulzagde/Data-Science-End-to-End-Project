@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Concrete Strength Indicator</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      margin-top: 50px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 24px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .form-label {
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    .text-prediction {
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 20px;
+      color: #007bff;
+    }
+
+    /* Additional CSS Styles */
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-select,
+    .form-control {
+      border-radius: 5px;
+      border-color: #ccc;
+    }
+
+    .form-select:focus,
+    .form-control:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #007bff;
+    }
+
+    .form-select option,
+    .form-control {
+      color: #333;
+    }
+
+    .text-center {
+      color: #007bff;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h3>CONCRETE STRENGTH INDICATOR</h3>
+      </div>
+      <div class="card-body">
+        <form action="{{ url_for('prediction_data')}}" method="post">
+          <div class="mb-3">
+            <label for="cement" class="form-label">Cement:</label>
+            <input class="form-control" type="number" name="cement" id="cement" placeholder="Enter Cement value" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="blast-furnace-slag" class="form-label">Blast Furnace Slag:</label>
+            <input class="form-control" type="number" name="blast_furnace_slag" id="blast-furnace-slag" placeholder="Enter Blast Furnace Slag value" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="fly-ash" class="form-label">Fly Ash:</label>
+            <input class="form-control" type="number" name="fly_ash" id="fly-ash" placeholder="Enter Fly Ash value" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="water" class="form-label">Water:</label>
+            <input class="form-control" type="number" name="water" id="water" placeholder="Enter Water value" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="superplasticizer" class="form-label">Superplasticizer:</label>
+            <input class="form-control" type="number" name="superplasticizer" id="superplasticizer" placeholder="Enter Superplasticizer value" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="coarse-aggregate" class="form-label">Coarse Aggregate:</label>
+            <input class="form-control" type="number" name="coarse_aggregate" id="coarse-aggregate" placeholder="Enter Coarse Aggregate value" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="fine-aggregate" class="form-label">Fine Aggregate:</label>
+            <input class="form-control" type="number" name="fine_aggregate" id="fine-aggregate" placeholder="Enter Fine Aggregate value" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Age:</label>
+            <input class="form-control" type="number" name="age" id="age" placeholder="Enter Age value" step="1" required>
+        </div>
+        <div class="mt-4 mb-3 text-center">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Predict Strength</button>
+        </div>
+      </form>
+      <div class="text-center mt-4">
+        {% if results %}
+          <h4 class="text-prediction">The predicted strength is: {{ results }}</h4>
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
