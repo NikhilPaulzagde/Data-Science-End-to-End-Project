@@ -38,13 +38,13 @@ class CustomClass:
                  coarse_aggregate: float,
                  fine_aggregate: float,
                  age:float) :
-        self.cement= cement,	
-        self.blast_furnace_slag = blast_furnace_slag,
-        self.fly_ash = fly_ash,
-        self.water = water,
-        self.superplasticizer = superplasticizer,
-        self.coarse_aggregate = coarse_aggregate,
-        self.fine_aggregate = fine_aggregate,
+        self.cement= cement	
+        self.blast_furnace_slag = blast_furnace_slag
+        self.fly_ash = fly_ash
+        self.water = water
+        self.superplasticizer = superplasticizer
+        self.coarse_aggregate = coarse_aggregate
+        self.fine_aggregate = fine_aggregate
         self.age = age
 
     
