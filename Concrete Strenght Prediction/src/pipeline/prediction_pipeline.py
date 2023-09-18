@@ -30,15 +30,15 @@ class PredictionPipeline:
 
 class CustomClass:
     def __init__(self,
-                 cement:float,
-                 blast_furnace_slag:float,
+                 cement: float,
+                 blast_furnace_slag: float,
                  fly_ash: float,
                  water: float,
                  superplasticizer: float,
                  coarse_aggregate: float,
                  fine_aggregate: float,
-                 age:float) :
-        self.cement= cement	
+                 age: float) :
+        self.cement = cement
         self.blast_furnace_slag = blast_furnace_slag
         self.fly_ash = fly_ash
         self.water = water
