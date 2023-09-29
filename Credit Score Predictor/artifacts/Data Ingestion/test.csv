@@ -1,0 +1,34 @@
+Age,Gender,Income,Education,Marital Status,Number of Children,Home Ownership,Credit Score
+28,Male,75000,Bachelor's Degree,Single,0,Rented,1
+36,Female,85000,Master's Degree,Married,2,Owned,2
+26,Female,40000,Associate's Degree,Single,0,Rented,1
+46,Female,97500,High School Diploma,Married,1,Owned,2
+46,Female,102500,High School Diploma,Married,1,Owned,2
+50,Male,155000,Master's Degree,Married,0,Owned,2
+35,Female,85000,Doctorate,Married,1,Owned,2
+45,Female,100000,Bachelor's Degree,Married,3,Owned,2
+35,Female,75000,Doctorate,Married,1,Owned,2
+30,Male,112500,Master's Degree,Married,2,Owned,2
+40,Male,142500,High School Diploma,Single,0,Owned,2
+34,Male,47500,Associate's Degree,Single,0,Rented,1
+40,Male,142500,High School Diploma,Single,0,Owned,2
+30,Male,105000,Master's Degree,Married,2,Owned,2
+41,Male,110000,Doctorate,Single,0,Owned,2
+48,Female,82500,Doctorate,Married,1,Owned,2
+25,Female,50000,Bachelor's Degree,Single,0,Rented,2
+45,Female,115000,Bachelor's Degree,Married,3,Owned,2
+53,Male,125000,Associate's Degree,Married,0,Owned,2
+44,Male,87500,Master's Degree,Single,0,Owned,2
+48,Female,85000,Doctorate,Married,1,Owned,2
+47,Female,90000,Doctorate,Married,1,Owned,2
+33,Male,52500,High School Diploma,Single,0,Rented,1
+37,Female,72500,Bachelor's Degree,Married,2,Owned,2
+51,Male,150000,Bachelor's Degree,Married,0,Owned,2
+50,Male,150000,Master's Degree,Married,0,Owned,2
+29,Female,27500,High School Diploma,Single,0,Rented,0
+25,Female,60000,Bachelor's Degree,Single,0,Rented,1
+53,Male,122500,Associate's Degree,Married,0,Owned,2
+33,Male,50000,High School Diploma,Single,0,Rented,1
+37,Female,77500,Bachelor's Degree,Married,2,Owned,2
+33,Female,82000,Master's Degree,Married,1,Owned,2
+31,Male,65000,Bachelor's Degree,Single,0,Rented,1
