@@ -1,0 +1,13 @@
+[ 2023-09-24 12:59:15,793 ] 20 root - INFO - Data Ingestion Started
+[ 2023-09-24 12:59:15,809 ] 22 root - INFO - Data Reading Started
+[ 2023-09-24 12:59:15,809 ] 29 root - INFO - Data Has Been  Splitted
+[ 2023-09-24 12:59:15,809 ] 35 root - INFO - Data Ingestion Completed
+[ 2023-09-24 12:59:15,809 ] 68 root - INFO - Train and Test data Has Read 
+[ 2023-09-24 12:59:15,824 ] 84 root - INFO - shape of X (131, 7) and (33, 7)
+[ 2023-09-24 12:59:15,824 ] 85 root - INFO - shape of  y (131,) and (33,)
+[ 2023-09-24 12:59:15,849 ] 92 root - INFO - transformation completed
+[ 2023-09-24 12:59:15,849 ] 99 root - INFO - train_arr, test_arr Concatination completed
+[ 2023-09-24 12:59:15,849 ] 105 root - INFO - Saving Preprocessor object
+[ 2023-09-24 12:59:15,849 ] 30 root - INFO - Models training has initiated
+[ 2023-09-24 12:59:15,849 ] 40 root - INFO - Models Evaluation has initiated
+[ 2023-09-24 12:59:16,116 ] 56 root - INFO - Best model found, Model Name is K-NearestNeighbors,accuracy score : 0.9696969696969697

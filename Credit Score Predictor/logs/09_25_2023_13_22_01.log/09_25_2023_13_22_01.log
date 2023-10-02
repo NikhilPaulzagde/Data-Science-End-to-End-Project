@@ -1,0 +1,16 @@
+[ 2023-09-25 13:22:09,376 ] 20 root - INFO - Data Ingestion Started
+[ 2023-09-25 13:22:09,393 ] 22 root - INFO - Data Reading Started
+[ 2023-09-25 13:22:09,423 ] 29 root - INFO - Data Has Been  Splitted
+[ 2023-09-25 13:22:09,431 ] 35 root - INFO - Data Ingestion Completed
+[ 2023-09-25 13:22:09,431 ] 72 root - INFO - Train and Test data Has Read 
+[ 2023-09-25 13:22:09,461 ] 84 root - INFO - columns =Index(['Age', 'Gender', 'Income', 'Education', 'Marital_Status',
+       'Number_of_Children', 'Home_Ownership', 'Credit Score'],
+      dtype='object')
+[ 2023-09-25 13:22:09,481 ] 100 root - INFO - shape of X (131, 7) and (33, 7)
+[ 2023-09-25 13:22:09,481 ] 101 root - INFO - shape of  y (131,) and (33,)
+[ 2023-09-25 13:22:09,596 ] 108 root - INFO - transformation completed
+[ 2023-09-25 13:22:09,669 ] 120 root - INFO - train_arr, test_arr Concatination completed
+[ 2023-09-25 13:22:09,676 ] 126 root - INFO - Saving Preprocessor object
+[ 2023-09-25 13:22:09,677 ] 30 root - INFO - Models training has initiated
+[ 2023-09-25 13:22:09,678 ] 40 root - INFO - Models Evaluation has initiated
+[ 2023-09-25 13:22:10,729 ] 56 root - INFO - Best model found, Model Name is K-NearestNeighbors,accuracy score : 0.9696969696969697

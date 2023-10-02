@@ -1,0 +1,13 @@
+[ 2023-09-24 12:46:32,706 ] 20 root - INFO - Data Ingestion Started
+[ 2023-09-24 12:46:32,706 ] 22 root - INFO - Data Reading Started
+[ 2023-09-24 12:46:32,721 ] 29 root - INFO - Data Has Been  Splitted
+[ 2023-09-24 12:46:32,721 ] 35 root - INFO - Data Ingestion Completed
+[ 2023-09-24 12:46:32,721 ] 68 root - INFO - Train and Test data Has Read 
+[ 2023-09-24 12:46:32,721 ] 84 root - INFO - shape of X (131, 7) and (33, 7)
+[ 2023-09-24 12:46:32,721 ] 85 root - INFO - shape of  y (131,) and (33,)
+[ 2023-09-24 12:46:32,753 ] 92 root - INFO - transformation completed
+[ 2023-09-24 12:46:32,753 ] 99 root - INFO - train_arr, test_arr Concatination completed
+[ 2023-09-24 12:46:32,753 ] 105 root - INFO - Saving Preprocessor object
+[ 2023-09-24 12:46:32,753 ] 30 root - INFO - Models training has initiated
+[ 2023-09-24 12:46:32,753 ] 40 root - INFO - Models Evaluation has initiated
+[ 2023-09-24 12:46:32,786 ] 62 root - INFO - Error Found in initiate model trainer

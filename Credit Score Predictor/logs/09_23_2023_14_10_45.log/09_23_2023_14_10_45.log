@@ -1,0 +1,6 @@
+[ 2023-09-23 14:10:46,870 ] 20 root - INFO - Data Ingestion Started
+[ 2023-09-23 14:10:46,874 ] 22 root - INFO - Data Reading Started
+[ 2023-09-23 14:10:46,880 ] 29 root - INFO - Data Has Been  Splitted
+[ 2023-09-23 14:10:46,883 ] 35 root - INFO - Data Ingestion Completed
+[ 2023-09-23 14:10:46,883 ] 69 root - INFO - Train and Test data Has Read 
+[ 2023-09-23 14:10:46,916 ] 113 root - INFO - Error Found in initiate_data_transformation

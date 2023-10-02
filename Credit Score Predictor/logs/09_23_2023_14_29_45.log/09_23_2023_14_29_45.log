@@ -1,0 +1,10 @@
+[ 2023-09-23 14:29:47,428 ] 20 root - INFO - Data Ingestion Started
+[ 2023-09-23 14:29:47,428 ] 22 root - INFO - Data Reading Started
+[ 2023-09-23 14:29:47,428 ] 29 root - INFO - Data Has Been  Splitted
+[ 2023-09-23 14:29:47,444 ] 35 root - INFO - Data Ingestion Completed
+[ 2023-09-23 14:29:47,444 ] 68 root - INFO - Train and Test data Has Read 
+[ 2023-09-23 14:29:47,466 ] 84 root - INFO - shape of (131, 7) and (33, 7)
+[ 2023-09-23 14:29:47,466 ] 85 root - INFO - shape of (131,) and (33,)
+[ 2023-09-23 14:29:47,503 ] 92 root - INFO - transformation completed
+[ 2023-09-23 14:29:47,503 ] 99 root - INFO - train_arr, test_arr Concatination completed
+[ 2023-09-23 14:29:47,503 ] 105 root - INFO - Saving Preprocessor object
